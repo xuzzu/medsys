@@ -4,7 +4,9 @@
 
 <!--      Header-->
       <v-toolbar class="ml-15" color=" transparent  " align-center outlined flat fluid style="width: 2000px">
-
+        <div style="position: absolute; left: -25px; top: 10px">
+          <SearchBar />
+        </div>
 
         <v-tabs color="#FF5D00" style="margin-left: 540px">
           <v-tab class=" white--text font-weight-regular text-lg-center" v-for="link in links" :key="link" :to="link.route">{{
@@ -13,20 +15,19 @@
           </v-tab>
         </v-tabs>
         <!--        Registration button-->
-        <div style="margin-bottom: 10px">
+        <div style="margin-bottom: 5px">
           <RegistrationWindow/>
         </div>
 
 
         <!--          Login button-->
-        <div style="margin-bottom: 10px">
+        <div style="margin-bottom: 5px">
           <LoginWindow/>
         </div>
 
       </v-toolbar>
 <!--      Header-->
       <template>
-        <SearchBar />
         <!--        consultation-->
         <v-card class=" white--text header-cont pa-10" outlined color='transparent' width="540">
           <v-list-item-title class=" text-h2 text-wrap font-weight-medium mt-2 ">
